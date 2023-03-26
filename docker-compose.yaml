@@ -1,0 +1,9 @@
+version: '2'
+services:
+  dash:
+    container_name: dash-app
+    build: .
+    ports:
+    - "8050:8050"
+    volumes:
+    - .:/code
